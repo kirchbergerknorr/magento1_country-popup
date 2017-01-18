@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <kirchbergerknorr translate="label" module="kk_videoattachment">
+            <label>Kirchbergerknorr</label>
+            <sort_order>80</sort_order>
+        </kirchbergerknorr>
+    </tabs>
+    <sections>
+        <kk_country_popup translate="label" module="kk_videoattachment">
+            <label>Country Popup</label>
+            <tab>kirchbergerknorr</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>50</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>Country Popup</label>
+                    <comment><![CDATA[Shows popup with suggestion to switch to corresponding store, depending on user's country]]></comment>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable translate="label">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enable>
+                        <cookie_name translate="label">
+                            <label>Cookie Name</label>
+                            <comment>Choose cookie name to remember if user already closed popup once</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cookie_name>
+                        <block>
+                            <label>Block</label>
+                            <comment>Create CMS Block. Choose Identifier from the list. Create Blocks and assign them to each StoreView</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kk_country_popup/cmsblock</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <enable>1</enable>
+                            </depends>
+                        </block>
+                        <show_popup_on_undefined_country>
+                            <label>Show popup on undefined country</label>
+                            <comment>Will be used block selected for all stores (store_id=0)</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <enable>1</enable>
+                            </depends>
+                        </show_popup_on_undefined_country>
+                        <countries>
+                            <label>Countries Mapping</label>
+                            <comment>Select corresponding store views to countries</comment>
+                            <frontend_model>kk_country_popup/config_countries</frontend_model>
+                            <backend_model>adminhtml/system_config_backend_serialized_array</backend_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <depends>
+                                <enable>1</enable>
+                            </depends>
+                        </countries>
+                    </fields>
+                </general>
+            </groups>
+        </kk_country_popup>
+    </sections>
+</config>

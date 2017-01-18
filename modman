@@ -1,0 +1,9 @@
+# app/code
+app/code/community/Kirchbergerknorr/CountryPopup            app/code/community/Kirchbergerknorr/CountryPopup
+
+# app/etc
+app/etc/modules/Kirchbergerknorr_CountryPopup.xml            app/etc/modules/Kirchbergerknorr_CountryPopup.xml
+
+# app/design
+app/design/frontend/base/default/layout/kk_country_popup.xml            app/design/frontend/base/default/layout/kk_country_popup.xml
+app/design/frontend/base/default/template/kirchbergerknorr/country_popup/popup.phtml            app/design/frontend/base/default/template/kirchbergerknorr/country_popup/popup.phtml

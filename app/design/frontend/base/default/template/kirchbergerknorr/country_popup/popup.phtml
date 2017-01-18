@@ -1,0 +1,17 @@
+<?php if ($this->isShown()): ?>
+<div class="country-popup">
+    <a href="#" data-role="country-popup-close" title="<?php echo Mage::helper('kk_country_popup')->__('Close') ?>"><?php echo Mage::helper('kk_country_popup')->__('Close') ?></a>
+    <?php echo $this->getBlockContent(); ?>
+</div>
+
+<script>
+    jQuery(function ($) {
+        $('[data-role=country-popup-close]').click(function (e) {
+            $('.country-popup').hide();
+            Mage.Cookies.set('<?php echo $this->getCookieName(); ?>','1');
+            e.preventDefault();
+            return false;
+        });
+    });
+</script>
+<?php endif; ?>

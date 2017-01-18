@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="before_body_end">
+            <block type="kk_country_popup/popup" name="kk_country_popup" template="kirchbergerknorr/country_popup/popup.phtml"/>
+        </reference>
+    </default>
+</layout>

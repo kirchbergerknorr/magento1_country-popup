@@ -1,0 +1,8 @@
+{
+  "name": "kirchbergerknorr/country-popup",
+  "type": "magento-module",
+  "description": "Shows popup with suggestion to switch to corresponding store, depending on user's country",
+  "require": {
+    "tim-bezhashvyly/geoip": "dev-master#da30ab8"
+  }
+}
