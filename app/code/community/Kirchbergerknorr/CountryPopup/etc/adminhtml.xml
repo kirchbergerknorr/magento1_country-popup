@@ -11,7 +11,7 @@
                         <children>
                             <config>
                                 <children>
-                                    <kk_country_popup translate="title" module="Kirchbergerknorr_CountryPopup">
+                                    <kk_country_popup translate="title" module="kk_country_popup">
                                         <title>Country Popup Section</title>
                                         <sort_order>50</sort_order>
                                     </kk_country_popup>

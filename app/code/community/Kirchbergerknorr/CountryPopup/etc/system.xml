@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <config>
     <tabs>
-        <kirchbergerknorr translate="label" module="kk_videoattachment">
+        <kirchbergerknorr translate="label" module="kk_country_popup">
             <label>Kirchbergerknorr</label>
             <sort_order>80</sort_order>
         </kirchbergerknorr>
     </tabs>
     <sections>
-        <kk_country_popup translate="label" module="kk_videoattachment">
+        <kk_country_popup translate="label" module="kk_country_popup">
             <label>Country Popup</label>
             <tab>kirchbergerknorr</tab>
             <frontend_type>text</frontend_type>
